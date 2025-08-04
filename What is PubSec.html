@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who is a Public Sector Customer?</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+        :root {
+            --primary-color: #005A9C; /* Professional Blue */
+            --secondary-color: #003366; /* Darker Blue */
+            --accent-color: #FDB813; /* A contrasting accent color (e.g., gold) */
+            --bg-color: #f4f7fa; /* Light grey background */
+            --text-color: #333333;
+            --card-bg-color: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .infographic-container {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        header h1 {
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            text-align: left;
+        }
+
+        .card {
+            background: var(--card-bg-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            padding: 2.5rem 2rem;
+            border-top: 5px solid var(--primary-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px var(--shadow-color);
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .card h2 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        
+        .card .definition {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 1.5rem;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 1rem;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .card ul li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 0.75rem;
+        }
+
+        .card ul li::before {
+            content: '\f058'; /* Font Awesome check-circle icon */
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            color: var(--primary-color);
+            position: absolute;
+            left: 0;
+            top: 2px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            .card {
+                padding: 2rem 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="infographic-container">
+        <header>
+            <h1>Who is a Public Sector Customer?</h1>
+            <p>A clear definition across three primary categories.</p>
+        </header>
+
+        <main class="card-container">
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-landmark-dome"></i>
+                </div>
+                <h2>Government Entity</h2>
+                <p class="definition">
+                    Any national, state, provincial, municipal, local, First Nations, or Native American governmental organization.
+                </p>
+                <ul>
+                    <li>Includes any department, agency, ministry, instrumentality, or branch of government.</li>
+                    <li>Also includes public international organizations like the IMF, United Nations, and the World Bank.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-building-user"></i>
+                </div>
+                <h2>Government Owned Entity</h2>
+                <p class="definition">
+                    Organizations that are owned or controlled by a Government Entity, also known as State-Owned Enterprises (SOEs).
+                </p>
+                <ul>
+                    <li>Companies with 30% or more government ownership, control, or funding.</li>
+                    <li>Entities performing government functions (e.g., public schools, public hospitals, state-owned oil companies, utilities).</li>
+                    <li>Companies owned or controlled by a royal family or (outside the U.S.) a political party.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <h2>Government Personnel</h2>
+                <p class="definition">
+                    Individuals who are employed by, or act on behalf of, a government or government-owned entity.
+                </p>
+                <ul>
+                    <li>Employees at any level of government (national, regional, local).</li>
+                    <li>Political appointees, elected officials, and candidates for political office.</li>
+                    <li>Members of a royal family.</li>
+                    <li>All employees of Government Entities and Government-owned Entities.</li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
